@@ -1,0 +1,85 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  .filters {
+    margin: 1em auto;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+  
+  .filters select, .filters input, .filters button {
+    padding: 0.5em;
+    font-size: 1em;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+  }
+  
+  .events-container, .favorites {
+    width: 45%;
+    padding: 1em;
+  }
+  
+  .event-card {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .event-card img {
+    max-width: 150px;
+    border-radius: 8px;
+  }
+  
+  .event-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .favorites {
+    background-color: #f9f9f9;
+    padding: 1em;
+    border-top: 2px solid #ccc;
+  }
+  
+  .favorites ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .favorites li {
+    margin-bottom: 1em;
+  }
+  
+  .favorites button {
+    margin-left: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+    .events-container, .favorites {
+      width: 100%;
+    }
+  }
+  

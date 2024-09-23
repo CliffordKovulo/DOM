@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Event Management System</h1>
+    <div class="filters">
+      <label for="filterBy">Filter by:</label>
+      <select id="filterBy">
+        <option value="all">All Events</option>
+        <option value="price">Price</option>
+        <option value="location">Location</option>
+      </select>
+      <input type="text" id="filterValue" placeholder="Enter filter value">
+      <button onclick="applyFilter()">Apply Filter</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="eventsContainer" class="events-container">
+      <!-- Events will be dynamically loaded here -->
+    </section>
+    
+    <section id="favorites" class="favorites">
+      <h2>Favorites</h2>
+      <ul id="favoritesList"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
